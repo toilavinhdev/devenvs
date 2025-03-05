@@ -10,7 +10,7 @@ services:
     ports:
       - "27017:27017"
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=${GLOBAL_USER}
-      - MONGO_INITDB_ROOT_PASSWORD=${GLOBAL_PASSWORD}
+      - MONGO_INITDB_ROOT_USERNAME=nigger
+      - MONGO_INITDB_ROOT_PASSWORD=Password&12345678
     volumes:
       - mongodb-data:/data/db

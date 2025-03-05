@@ -11,8 +11,8 @@ services:
       - "9000:9000" # API
       - "9001:9001" # Web UI
     environment:
-      - MINIO_ROOT_USER=${GLOBAL_USER}
-      - MINIO_ROOT_PASSWORD=${GLOBAL_PASSWORD}
+      - MINIO_ROOT_USER=nigger
+      - MINIO_ROOT_PASSWORD=Password&12345678
     command: server /data --console-address ":9001"
     volumes:
       - minio-data:/data
