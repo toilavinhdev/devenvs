@@ -1,0 +1,14 @@
+version: "3.8"
+
+volumes:
+  rabbitmq-data: {}
+
+services:
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3.13-management
+    ports:
+      - "5672:5672"   # AMQP protocol
+      - "15672:15672" # UI management
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq

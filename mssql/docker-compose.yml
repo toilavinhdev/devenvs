@@ -1,0 +1,17 @@
+version: "3.8"
+
+volumes:
+  mssql-data: {}
+
+services:
+  mssql:
+    container_name: mssql
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    user: root
+    ports:
+      - "1434:1433"
+    environment:
+      - SA_PASSWORD=${GLOBAL_PASSWORD}
+      - ACCEPT_EULA=Y
+    volumes:
+      - mssql-data:/var/opt/mssql
