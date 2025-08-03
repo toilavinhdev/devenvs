@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Install Java JDK
 sudo apt install fontconfig openjdk-17-jre
 
