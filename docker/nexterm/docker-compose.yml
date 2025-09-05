@@ -5,11 +5,12 @@ volumes:
 
 services:
   nexterm:
+    container_name: nexterm
+    image: germannewsmaker/nexterm:1.0.5-OPEN-PREVIEW
     environment:
-      ENCRYPTION_KEY: "aba3aa8e29b9904d5d8d705230b664c053415c54be20ad13be99af0057dfa23a" # Replace with your generated key
+      ENCRYPTION_KEY: "aba3aa8e29b9904d5d8d705230b664c053415c54be20ad13be99af0057dfa23a"
     ports:
       - "6989:6989"
     restart: always
     volumes:
       - nexterm:/app/data
-    image: germannewsmaker/nexterm:1.0.3-OPEN-PREVIEW
